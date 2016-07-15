@@ -1,0 +1,102 @@
+html, body, #root {
+	height: 100%;
+	width: 100%;
+    margin: 0;
+}
+
+#container {
+    min-width: 100%;
+    min-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #fff;
+    transition: all 7s ease-in-out; 
+}
+
+.epoch-my-gauge-theme .epoch .gauge-labels .value{fill:#fff;}
+
+.epoch-my-gauge-theme .epoch .gauge .arc.outer{stroke:#fff;}
+
+.epoch-my-gauge-theme .epoch .gauge .arc.inner{stroke:#fff;}
+
+.epoch-my-gauge-theme .epoch .gauge .tick{stroke:#fff;}
+
+.epoch-my-gauge-theme .epoch .gauge .needle{fill:orange;}
+
+.epoch-my-gauge-theme .epoch .gauge .needle-base{fill:#fff;}
+
+#real-time-gauge {
+    margin: 0 auto;
+}
+
+.msgs {
+	list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5em 2em;
+}
+
+.msgs .msg {
+    margin-bottom: 1.5em;
+    padding-top: 1.5em;
+}
+
+.msg-transition-enter {
+	opacity: 0.01;
+}
+
+.msg-transition-enter.msg-transition-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.msg-transition-leave {
+    opacity: 1;
+}
+
+.msg-transition-leave.msg-transition-leave-active {
+    opacity: 0.01;
+    transition: opacity 500ms ease-in;
+}
+
+.msgs .msg + .msg {
+    border-top: 1px solid #fff;
+}
+
+.msgs .msg-from {
+    margin-bottom: 0.4em;
+    font-weight: bold;
+}
+
+.msgs .msg-text {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.msgs .msg-text:before, .msg .msg-text:after {
+    content: '"';
+}
+
+.msgs .msg-info {
+    margin-top: 1.5em;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.msgs .msg-info li {
+    float: left;
+}
+
+.msgs .msg-info li + li {
+    margin-left: 1em;
+}
+
+.msgs .msg-info li span {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.center-align {
+    text-align: center;
+}
